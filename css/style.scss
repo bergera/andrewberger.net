@@ -12,7 +12,6 @@ $yellow: #b58900;
 
 $base-font-size: 16px;
 @function em($px, $base: $base-font-size) { @return ($px / $base) * 1em; }
-@function rem($px, $base: $base-font-size) { @return ($px / $base) * 1rem; }
 
 .anonymous-pro {
 	font-family: "Anonymous Pro", "Courier New", Courier, monospace;
@@ -85,56 +84,54 @@ a {
 }
 
 .email {
-	height: rem(32px);
+	height: em(32px);
 	position: relative;
-	margin-bottom: rem(10px);
-	margin-top: rem(-10px);
+	margin-bottom: em(10px);
+	margin-top: em(-10px);
 
 	span {
-		font-size: rem(32px);
-		width: rem(32px);
-		margin-left: rem(2px);
+		font-size: em(32px);
+		width: em(32px);
+		margin-left: em(2px);
 	}
 
 	a {
 		position: absolute;
-		top: rem(8px);
-		left: rem(40px);
+		top: em(8px);
+		left: em(40px);
 	}
 }
 
 .facebook {
 	background: url(../img/facebook.png) no-repeat 0% 50%;
-	padding: rem(5px) 0 rem(5px) rem(40px);
-	height: rem(32px);
+	padding: em(5px) 0 em(5px) em(40px);
+	height: em(32px);
 }
 .github {
 	background: url(../img/github.png) no-repeat 0% 50%;
-	padding: rem(5px) 0 rem(5px) rem(40px);
-	height: rem(32px);
+	padding: em(5px) 0 em(5px) em(40px);
+	height: em(32px);
 }
 .drupal {
 	background: url(../img/drupalicon.png) no-repeat 0% 50%;
-	padding: rem(5px) 0 rem(5px) rem(40px);
-	height: rem(32px);
+	padding: em(5px) 0 em(5px) em(40px);
+	height: em(32px);
 }
 
 dl {
 	@extend .open-sans;
-	font-size: rem(20px);
+	font-size: em(20px);
 	color: $textColor;
-	padding-top: rem(20px);
-	margin-bottom: rem(40px);
+	padding-top: em(20px);
+	margin-bottom: em(40px);
 }
 
 dt {
-	$dtPaddingRight: 20px;
-	width: rem($columnWidth - $dtPaddingRight);
+	width: em(170px);
 	float: left;
 	text-align: right;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding-right: rem($dtPaddingRight);
 }
 
 dd {
@@ -143,10 +140,14 @@ dd {
 }
 
 dt.section, dd.section {
-	padding-top: rem(35px);
+	padding-top: em(35px);
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	body {
+		font-size: 200%;
+	}
+	
 	.container {
 		width: 100%;
 		margin: 0;
@@ -171,6 +172,7 @@ dt.section, dd.section {
 			padding: 0 em(20px);
 			display: block;
 			text-align: center;
+			font-size: em(32px);
 		}
 
 	}

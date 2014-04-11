@@ -59,56 +59,58 @@ a {
     margin-bottom: 0.625em; }
 
 .email {
-  height: 2rem;
+  height: 2em;
   position: relative;
-  margin-bottom: 0.625rem;
-  margin-top: -0.625rem; }
+  margin-bottom: 0.625em;
+  margin-top: -0.625em; }
   .email span {
-    font-size: 2rem;
-    width: 2rem;
-    margin-left: 0.125rem; }
+    font-size: 2em;
+    width: 2em;
+    margin-left: 0.125em; }
   .email a {
     position: absolute;
-    top: 0.5rem;
-    left: 2.5rem; }
+    top: 0.5em;
+    left: 2.5em; }
 
 .facebook {
   background: url(../img/facebook.png) no-repeat 0% 50%;
-  padding: 0.3125rem 0 0.3125rem 2.5rem;
-  height: 2rem; }
+  padding: 0.3125em 0 0.3125em 2.5em;
+  height: 2em; }
 
 .github {
   background: url(../img/github.png) no-repeat 0% 50%;
-  padding: 0.3125rem 0 0.3125rem 2.5rem;
-  height: 2rem; }
+  padding: 0.3125em 0 0.3125em 2.5em;
+  height: 2em; }
 
 .drupal {
   background: url(../img/drupalicon.png) no-repeat 0% 50%;
-  padding: 0.3125rem 0 0.3125rem 2.5rem;
-  height: 2rem; }
+  padding: 0.3125em 0 0.3125em 2.5em;
+  height: 2em; }
 
 dl {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   color: #839496;
-  padding-top: 1.25rem;
-  margin-bottom: 2.5rem; }
+  padding-top: 1.25em;
+  margin-bottom: 2.5em; }
 
 dt {
-  width: 13.51563rem;
+  width: 10.625em;
   float: left;
   text-align: right;
   text-transform: uppercase;
-  font-weight: bold;
-  padding-right: 1.25rem; }
+  font-weight: bold; }
 
 dd {
   width: 75%;
   margin-left: 25%; }
 
 dt.section, dd.section {
-  padding-top: 2.1875rem; }
+  padding-top: 2.1875em; }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  body {
+    font-size: 200%; }
+
   .container {
     width: 100%;
     margin: 0;
@@ -126,7 +128,8 @@ dt.section, dd.section {
       width: auto;
       padding: 0 1.25em;
       display: block;
-      text-align: center; }
+      text-align: center;
+      font-size: 2em; }
 
   dt {
     width: 100%;
