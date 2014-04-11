@@ -49,7 +49,7 @@ a {
     font-size: 1.375em;
     font-style: italic;
     font-weight: bold;
-    color: #839496;
+    color: #93a1a1;
     display: table-cell;
     vertical-align: middle; }
   .header h2 {
@@ -91,7 +91,6 @@ a {
 
 dl {
   font-size: 1.25em;
-  color: #839496;
   padding-top: 1.25em;
   margin-bottom: 2.5em; }
 
@@ -100,11 +99,13 @@ dt {
   float: left;
   text-align: right;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #93a1a1; }
 
 dd {
   width: 75%;
-  margin-left: 25%; }
+  margin-left: 25%;
+  color: #839496; }
 
 dt.section, dd.section {
   padding-top: 2.1875em; }
@@ -161,6 +162,10 @@ dt.section, dd.section {
       top: initial;
       left: initial; }
 
-  .facebook, .github, .drupal {
+  .findme[data-sitename] {
     padding: 0;
-    background: initial; } }
+    background: none; }
+
+  .findme[data-sitename]::before {
+    content: attr(data-sitename);
+    padding-right: 0.625em; } }

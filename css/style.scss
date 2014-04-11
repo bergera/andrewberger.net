@@ -10,6 +10,7 @@ $columnWidth: $containerWidth / 4;
 $bgColor: #002b36;
 $bgHighlight: #073642;
 $textColor: #839496;
+$textHighlight: #93a1a1;
 $blue: #268bd2;
 $yellow: #b58900;
 
@@ -69,7 +70,7 @@ a {
 		font-size: em(22px);
 		font-style: italic;
 		font-weight: bold;
-		color: $textColor;
+		color: $textHighlight;
 		display: table-cell;
 		vertical-align: middle;
 	}
@@ -117,7 +118,6 @@ a {
 dl {
 	@extend .open-sans;
 	font-size: em(20px);
-	color: $textColor;
 	padding-top: em(20px);
 	margin-bottom: em(40px);
 }
@@ -128,11 +128,13 @@ dt {
 	text-align: right;
 	text-transform: uppercase;
 	font-weight: bold;
+	color: $textHighlight;
 }
 
 dd {
 	width: 75%;
 	margin-left: 25%;
+	color: $textColor;
 }
 
 dt.section, dd.section {
@@ -210,8 +212,12 @@ dt.section, dd.section {
 			left: initial;
 		}
     }
-	.facebook, .github, .drupal {
-		padding: 0;
-		background: initial;
+    .findme[data-sitename] {
+    	padding: 0;
+		background: none;
+    }
+    .findme[data-sitename]::before {
+		content: attr(data-sitename);
+		padding-right: em(10px);
 	}
 }
