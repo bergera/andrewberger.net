@@ -157,6 +157,7 @@ dt.section, dd.section {
 		h2 {
 			margin: 0;
 			padding: em(5px) 0;
+			font-size: auto;
 		}
 
 		.container {
@@ -168,7 +169,7 @@ dt.section, dd.section {
 			padding: 0 em(20px);
 			display: block;
 			text-align: center;
-			font-size: em(32px);
+			font-size: auto;
 		}
 
 	}

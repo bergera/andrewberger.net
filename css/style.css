@@ -123,7 +123,8 @@ dt.section, dd.section {
     padding: 0 0 1.25em 0; }
     .header h2 {
       margin: 0;
-      padding: 0.3125em 0; }
+      padding: 0.3125em 0;
+      font-size: auto; }
     .header .container {
       display: block; }
     .header .name, .header .headertext {
@@ -131,7 +132,7 @@ dt.section, dd.section {
       padding: 0 1.25em;
       display: block;
       text-align: center;
-      font-size: 2em; }
+      font-size: auto; }
 
   dt {
     width: 100%;
