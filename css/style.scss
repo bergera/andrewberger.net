@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+$base-font-size: 16px;
+@function em($px, $base: $base-font-size) { @return ($px / $base) * 1em; }
+
 $containerPadding: 15px;
 $containerWidth: 960px - $containerPadding;
 $columnWidth: $containerWidth / 4;
@@ -9,9 +12,6 @@ $bgHighlight: #073642;
 $textColor: #839496;
 $blue: #268bd2;
 $yellow: #b58900;
-
-$base-font-size: 16px;
-@function em($px, $base: $base-font-size) { @return ($px / $base) * 1em; }
 
 .anonymous-pro {
 	font-family: "Anonymous Pro", "Courier New", Courier, monospace;
@@ -139,9 +139,15 @@ dt.section, dd.section {
 	padding-top: em(35px);
 }
 
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+	body {
+		font-size: 140%;
+	}
+}
+
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 	body {
-		font-size: 200%;
+		font-size: 150%;
 	}
 
 	.container {

@@ -109,9 +109,12 @@ dd {
 dt.section, dd.section {
   padding-top: 2.1875em; }
 
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  body {
+    font-size: 140%; } }
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
   body {
-    font-size: 200%; }
+    font-size: 150%; }
 
   .container {
     width: 100%;
