@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+$containerPadding: 15px;
+$containerWidth: 960px - $containerPadding;
+$columnWidth: $containerWidth / 4;
+$bgColor: #002b36;
+$bgHighlight: #073642;
+$textColor: #839496;
+$blue: #268bd2;
+$yellow: #b58900;
+
+$base-font-size: 16px;
+@function em($px, $base: $base-font-size) { @return ($px / $base) * 1em; }
+@function rem($px, $base: $base-font-size) { @return ($px / $base) * 1rem; }
+
+.anonymous-pro {
+	font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+.trebuchet-ms {
+	font-family: "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif;
+}
+.open-sans {
+	font-family: "Open Sans", "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $bgColor;
+}
+
+a {
+	color: $blue;
+	&:link, &:visited, &:active { text-decoration: underline; }
+	&:hover { text-decoration: none; }
+}
+
+.container {
+	width: em($containerWidth);
+	padding: 0 $containerPadding;
+	height: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.header {
+	width: 100%;
+	margin-top: em(40px);
+	background: $bgHighlight;
+	
+	.container { display: table; }
+
+	.name {
+		width: 25%;
+		text-align: right;
+		display: inline-block;
+	}
+
+	.headertext {
+		@extend .trebuchet-ms;
+		width: 75%;
+		display: inline;
+		font-size: em(22px);
+		font-style: italic;
+		font-weight: bold;
+		color: $textColor;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	h2 {
+		@extend .anonymous-pro;
+		text-transform: lowercase;
+		color: $yellow;
+		font-size: em(64px);
+		font-weight: 700;
+		line-height: em(11px);
+		margin-top: em(8px);
+		margin-bottom: em(10px);
+	}
+
+}
+
+.email {
+	height: rem(32px);
+	position: relative;
+	margin-bottom: rem(10px);
+	margin-top: rem(-10px);
+
+	span {
+		font-size: rem(32px);
+		width: rem(32px);
+		margin-left: rem(2px);
+	}
+
+	a {
+		position: absolute;
+		top: rem(8px);
+		left: rem(40px);
+	}
+}
+
+.facebook {
+	background: url(../img/facebook.png) no-repeat 0% 50%;
+	padding: rem(5px) 0 rem(5px) rem(40px);
+	height: rem(32px);
+}
+.github {
+	background: url(../img/github.png) no-repeat 0% 50%;
+	padding: rem(5px) 0 rem(5px) rem(40px);
+	height: rem(32px);
+}
+.drupal {
+	background: url(../img/drupalicon.png) no-repeat 0% 50%;
+	padding: rem(5px) 0 rem(5px) rem(40px);
+	height: rem(32px);
+}
+
+dl {
+	@extend .open-sans;
+	font-size: rem(20px);
+	color: $textColor;
+	padding-top: rem(20px);
+	margin-bottom: rem(40px);
+}
+
+dt {
+	$dtPaddingRight: 20px;
+	width: rem($columnWidth - $dtPaddingRight);
+	float: left;
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-right: rem($dtPaddingRight);
+}
+
+dd {
+	width: 75%;
+	margin-left: 25%;
+}
+
+dt.section, dd.section {
+	padding-top: rem(35px);
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.header {
+		margin-top: 0;
+		padding: 0 0 em(20px) 0;
+
+		h2 {
+			margin: 0;
+			padding: em(5px) 0;
+		}
+
+		.container {
+			display: block;
+		}
+		
+		.name, .headertext {
+			width: auto;
+			padding: 0 em(20px);
+			display: block;
+			text-align: center;
+		}
+
+	}
+
+	dt {
+		width: 100%;
+		float: none;
+		padding: 0;
+		text-align: center;
+	}
+
+	dd {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+	dd.section {
+		padding: 0;
+	}
+
+	.email {
+		padding: 0;
+		margin: 0;
+
+		span {
+			display: none;
+		}
+
+		a {
+			position: initial;
+			top: initial;
+			left: initial;
+		}
+    }
+	.facebook, .github, .drupal {
+		padding: 0;
+		background: initial;
+	}
+}

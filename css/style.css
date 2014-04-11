@@ -1,0 +1,156 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.anonymous-pro, .header h2 {
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+  font-weight: bold; }
+
+.trebuchet-ms, .header .headertext {
+  font-family: "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
+
+.open-sans, dl {
+  font-family: "Open Sans", "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #002b36; }
+
+a {
+  color: #268bd2; }
+  a:link, a:visited, a:active {
+    text-decoration: underline; }
+  a:hover {
+    text-decoration: none; }
+
+.container {
+  width: 59.0625em;
+  padding: 0 15px;
+  height: 100%;
+  margin: 0 auto;
+  clear: both; }
+
+.header {
+  width: 100%;
+  margin-top: 2.5em;
+  background: #073642; }
+  .header .container {
+    display: table; }
+  .header .name {
+    width: 25%;
+    text-align: right;
+    display: inline-block; }
+  .header .headertext {
+    width: 75%;
+    display: inline;
+    font-size: 1.375em;
+    font-style: italic;
+    font-weight: bold;
+    color: #839496;
+    display: table-cell;
+    vertical-align: middle; }
+  .header h2 {
+    text-transform: lowercase;
+    color: #b58900;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 0.6875em;
+    margin-top: 0.5em;
+    margin-bottom: 0.625em; }
+
+.email {
+  height: 2rem;
+  position: relative;
+  margin-bottom: 0.625rem;
+  margin-top: -0.625rem; }
+  .email span {
+    font-size: 2rem;
+    width: 2rem;
+    margin-left: 0.125rem; }
+  .email a {
+    position: absolute;
+    top: 0.5rem;
+    left: 2.5rem; }
+
+.facebook {
+  background: url(../img/facebook.png) no-repeat 0% 50%;
+  padding: 0.3125rem 0 0.3125rem 2.5rem;
+  height: 2rem; }
+
+.github {
+  background: url(../img/github.png) no-repeat 0% 50%;
+  padding: 0.3125rem 0 0.3125rem 2.5rem;
+  height: 2rem; }
+
+.drupal {
+  background: url(../img/drupalicon.png) no-repeat 0% 50%;
+  padding: 0.3125rem 0 0.3125rem 2.5rem;
+  height: 2rem; }
+
+dl {
+  font-size: 1.25rem;
+  color: #839496;
+  padding-top: 1.25rem;
+  margin-bottom: 2.5rem; }
+
+dt {
+  width: 13.51563rem;
+  float: left;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-right: 1.25rem; }
+
+dd {
+  width: 75%;
+  margin-left: 25%; }
+
+dt.section, dd.section {
+  padding-top: 2.1875rem; }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .header {
+    margin-top: 0;
+    padding: 0 0 1.25em 0; }
+    .header h2 {
+      margin: 0;
+      padding: 0.3125em 0; }
+    .header .container {
+      display: block; }
+    .header .name, .header .headertext {
+      width: auto;
+      padding: 0 1.25em;
+      display: block;
+      text-align: center; }
+
+  dt {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: center; }
+
+  dd {
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+
+  dd.section {
+    padding: 0; }
+
+  .email {
+    padding: 0;
+    margin: 0; }
+    .email span {
+      display: none; }
+    .email a {
+      position: initial;
+      top: initial;
+      left: initial; }
+
+  .facebook, .github, .drupal {
+    padding: 0;
+    background: initial; } }
