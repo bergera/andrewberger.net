@@ -4,9 +4,11 @@
 $base-font-size: 16px;
 @function em($px, $base: $base-font-size) { @return ($px / $base) * 1em; }
 
-$containerPadding: 15px;
-$containerWidth: 960px - $containerPadding;
+
+$containerWidth: 960px;
 $columnWidth: $containerWidth / 4;
+$columnPadding: 25px;
+
 $bgColor: #002b36;
 $bgHighlight: #073642;
 $textColor: #839496;
@@ -43,11 +45,17 @@ a {
 }
 
 .container {
-	width: em($containerWidth);
-	padding: 0 $containerPadding;
+	max-width: $containerWidth;
 	height: 100%;
 	margin: 0 auto;
 	clear: both;
+}
+.left-column {
+	width: $columnWidth;
+}
+.right-column {
+	max-width: ($columnWidth * 3) - ($columnPadding * 2);
+	padding: 0 $columnPadding;
 }
 
 .header {
@@ -55,17 +63,19 @@ a {
 	margin-top: em(40px);
 	background: $bgHighlight;
 	
-	.container { display: table; }
+	.container {
+		display: table;
+	}
 
 	.name {
-		width: 25%;
+		@extend .left-column;
 		text-align: right;
 		display: inline-block;
 	}
 
 	.headertext {
 		@extend .trebuchet-ms;
-		width: 75%;
+		@extend .right-column;
 		display: inline;
 		font-size: em(22px);
 		font-style: italic;
@@ -89,26 +99,26 @@ a {
 }
 
 .findme {
-	padding: em(5px) 0 0 em(35px);
+	padding: 5px 0 0 40px;
 	padding-right: 0;
-	height: em(30px);
+	height: 35px;
+	margin-left: $columnWidth + 32px;
 }
 .email {
-	height: em(32px);
 	position: relative;
 	margin-bottom: em(10px);
 	margin-top: em(-15px);
 	padding-left: 0;
 
 	span {
-		font-size: em(32px);
-		width: em(32px);
+		font-size: em(30px);
+		width: 32px;
 	}
 
 	a {
 		position: absolute;
-		top: em(15px);
-		left: em(35px);
+		top: 18px;
+		left: 40px;
 	}
 }
 .facebook {	background: url(../img/facebook.png) no-repeat 0% 50%; }
@@ -118,12 +128,12 @@ a {
 dl {
 	@extend .open-sans;
 	font-size: em(20px);
-	padding-top: em(20px);
+	padding-top: 20px;
 	margin-bottom: em(40px);
 }
 
 dt {
-	width: em(170px);
+	@extend .left-column;
 	float: left;
 	text-align: right;
 	text-transform: uppercase;
@@ -132,13 +142,13 @@ dt {
 }
 
 dd {
-	width: 75%;
-	margin-left: 25%;
+	@extend .right-column;
+	margin-left: $columnWidth;
 	color: $textColor;
 }
 
 dt.section, dd.section {
-	padding-top: em(35px);
+	padding-top: 35px;
 }
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
@@ -147,7 +157,7 @@ dt.section, dd.section {
 	}
 }
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 660px), only screen and (max-device-width: 660px) {
 	body {
 		font-size: 150%;
 	}
@@ -193,6 +203,7 @@ dt.section, dd.section {
 		width: 100%;
 		margin-left: 0;
 		text-align: center;
+		padding: 0;
 	}
 	dd.section {
 		padding: 0;
@@ -211,6 +222,11 @@ dt.section, dd.section {
 			top: initial;
 			left: initial;
 		}
+    }
+    .findme {
+    	padding: 0;
+    	margin: 0;
+    	height: auto;
     }
     .findme[data-sitename] {
     	padding: 0;

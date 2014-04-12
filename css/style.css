@@ -27,11 +27,17 @@ a {
     text-decoration: none; }
 
 .container {
-  width: 59.0625em;
-  padding: 0 15px;
+  max-width: 960px;
   height: 100%;
   margin: 0 auto;
   clear: both; }
+
+.left-column, .header .name, dt {
+  width: 240px; }
+
+.right-column, .header .headertext, dd {
+  max-width: 670px;
+  padding: 0 25px; }
 
 .header {
   width: 100%;
@@ -40,11 +46,9 @@ a {
   .header .container {
     display: table; }
   .header .name {
-    width: 25%;
     text-align: right;
     display: inline-block; }
   .header .headertext {
-    width: 75%;
     display: inline;
     font-size: 1.375em;
     font-style: italic;
@@ -62,23 +66,23 @@ a {
     margin-bottom: 0.625em; }
 
 .findme {
-  padding: 0.3125em 0 0 2.1875em;
+  padding: 5px 0 0 40px;
   padding-right: 0;
-  height: 1.875em; }
+  height: 35px;
+  margin-left: 272px; }
 
 .email {
-  height: 2em;
   position: relative;
   margin-bottom: 0.625em;
   margin-top: -0.9375em;
   padding-left: 0; }
   .email span {
-    font-size: 2em;
-    width: 2em; }
+    font-size: 1.875em;
+    width: 32px; }
   .email a {
     position: absolute;
-    top: 0.9375em;
-    left: 2.1875em; }
+    top: 18px;
+    left: 40px; }
 
 .facebook {
   background: url(../img/facebook.png) no-repeat 0% 50%; }
@@ -91,11 +95,10 @@ a {
 
 dl {
   font-size: 1.25em;
-  padding-top: 1.25em;
+  padding-top: 20px;
   margin-bottom: 2.5em; }
 
 dt {
-  width: 10.625em;
   float: left;
   text-align: right;
   text-transform: uppercase;
@@ -103,17 +106,16 @@ dt {
   color: #93a1a1; }
 
 dd {
-  width: 75%;
-  margin-left: 25%;
+  margin-left: 240px;
   color: #839496; }
 
 dt.section, dd.section {
-  padding-top: 2.1875em; }
+  padding-top: 35px; }
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
   body {
     font-size: 140%; } }
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 660px), only screen and (max-device-width: 660px) {
   body {
     font-size: 150%; }
 
@@ -147,7 +149,8 @@ dt.section, dd.section {
   dd {
     width: 100%;
     margin-left: 0;
-    text-align: center; }
+    text-align: center;
+    padding: 0; }
 
   dd.section {
     padding: 0; }
@@ -161,6 +164,11 @@ dt.section, dd.section {
       position: initial;
       top: initial;
       left: initial; }
+
+  .findme {
+    padding: 0;
+    margin: 0;
+    height: auto; }
 
   .findme[data-sitename] {
     padding: 0;
