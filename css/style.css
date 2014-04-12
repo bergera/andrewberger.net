@@ -1,117 +1,117 @@
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-.anonymous-pro, .header h2 {
-  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
-  font-weight: bold; }
+@media only screen {
+  .anonymous-pro, .header h2 {
+    font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+    font-weight: bold; }
 
-.trebuchet-ms, .header .headertext {
-  font-family: "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
+  .trebuchet-ms, .header .headertext {
+    font-family: "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
 
-.open-sans, dl {
-  font-family: "Open Sans", "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
+  .open-sans, dl {
+    font-family: "Open Sans", "Trebuchet MS", Helvetica, Tahoma, Verdana, sans-serif; }
 
-html {
-  font-size: 62.5%; }
+  html {
+    font-size: 62.5%; }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #002b36;
-  font-size: 1.6em; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #002b36;
+    font-size: 1.6em; }
 
-a {
-  color: #268bd2; }
-  a:link, a:visited, a:active {
-    text-decoration: underline; }
-  a:hover {
-    text-decoration: none; }
+  a {
+    color: #268bd2; }
+    a:link, a:visited, a:active {
+      text-decoration: underline; }
+    a:hover {
+      text-decoration: none; }
 
-.container {
-  max-width: 960px;
-  height: 100%;
-  margin: 0 auto;
-  clear: both; }
+  .container {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    clear: both; }
 
-.left-column, .header .name, dt {
-  width: 240px; }
+  .left-column, .header .name, dt {
+    width: 240px; }
 
-.right-column, .header .headertext, dd {
-  max-width: 670px;
-  padding: 0 25px; }
+  .right-column, .header .headertext, dd {
+    max-width: 670px;
+    padding: 0 25px; }
 
-.header {
-  width: 100%;
-  margin-top: 2.5em;
-  background: #073642; }
-  .header .container {
-    display: table; }
-  .header .name {
+  .header {
+    width: 100%;
+    margin-top: 2.5em;
+    background: #073642; }
+    .header .container {
+      display: table; }
+    .header .name {
+      text-align: right;
+      display: inline-block; }
+    .header .headertext {
+      display: inline;
+      font-size: 1.375em;
+      font-style: italic;
+      font-weight: bold;
+      color: #93a1a1;
+      display: table-cell;
+      vertical-align: middle; }
+    .header h2 {
+      text-transform: lowercase;
+      color: #b58900;
+      font-size: 4em;
+      font-weight: 700;
+      line-height: 0.6875em;
+      margin-top: 0.5em;
+      margin-bottom: 0.625em; }
+
+  .findme {
+    padding: 5px 0 0 40px;
+    padding-right: 0;
+    height: 35px;
+    margin-left: 272px; }
+
+  .email {
+    position: relative;
+    margin-bottom: 0.625em;
+    margin-top: -0.9375em;
+    padding-left: 0; }
+    .email span {
+      font-size: 1.875em;
+      width: 32px; }
+    .email a {
+      position: absolute;
+      top: 18px;
+      left: 40px; }
+
+  .facebook {
+    background: url(../img/facebook.png) no-repeat 0% 50%; }
+
+  .github {
+    background: url(../img/github.png) no-repeat 0% 50%; }
+
+  .drupal {
+    background: url(../img/drupalicon.png) no-repeat 0% 50%; }
+
+  dl {
+    font-size: 1.25em;
+    padding-top: 20px;
+    margin-bottom: 2.5em; }
+
+  dt {
+    float: left;
     text-align: right;
-    display: inline-block; }
-  .header .headertext {
-    display: inline;
-    font-size: 1.375em;
-    font-style: italic;
+    text-transform: uppercase;
     font-weight: bold;
-    color: #93a1a1;
-    display: table-cell;
-    vertical-align: middle; }
-  .header h2 {
-    text-transform: lowercase;
-    color: #b58900;
-    font-size: 4em;
-    font-weight: 700;
-    line-height: 0.6875em;
-    margin-top: 0.5em;
-    margin-bottom: 0.625em; }
+    color: #93a1a1; }
 
-.findme {
-  padding: 5px 0 0 40px;
-  padding-right: 0;
-  height: 35px;
-  margin-left: 272px; }
+  dd {
+    margin-left: 240px;
+    color: #839496; }
 
-.email {
-  position: relative;
-  margin-bottom: 0.625em;
-  margin-top: -0.9375em;
-  padding-left: 0; }
-  .email span {
-    font-size: 1.875em;
-    width: 32px; }
-  .email a {
-    position: absolute;
-    top: 18px;
-    left: 40px; }
-
-.facebook {
-  background: url(../img/facebook.png) no-repeat 0% 50%; }
-
-.github {
-  background: url(../img/github.png) no-repeat 0% 50%; }
-
-.drupal {
-  background: url(../img/drupalicon.png) no-repeat 0% 50%; }
-
-dl {
-  font-size: 1.25em;
-  padding-top: 20px;
-  margin-bottom: 2.5em; }
-
-dt {
-  float: left;
-  text-align: right;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #93a1a1; }
-
-dd {
-  margin-left: 240px;
-  color: #839496; }
-
-dt.section, dd.section {
-  padding-top: 35px; }
-
+  dt.section, dd.section {
+    padding-top: 35px; } }
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
   body {
     font-size: 140%; } }
@@ -172,6 +172,13 @@ dt.section, dd.section {
   .findme[data-sitename] {
     padding: 0;
     background: none; }
+
+  .findme[data-sitename]::before {
+    content: attr(data-sitename);
+    padding-right: 10px; } }
+@media only print {
+  .email span {
+    display: none; }
 
   .findme[data-sitename]::before {
     content: attr(data-sitename);
