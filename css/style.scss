@@ -170,11 +170,11 @@ dt.section, dd.section {
 
 	.header {
 		margin-top: 0;
-		padding: 0 0 em(20px) 0;
+		padding: 25px 0 20px 0;
 
 		h2 {
 			margin: 0;
-			padding: em(5px) 0;
+			padding: 5px 0;
 			font-size: auto;
 		}
 
@@ -184,7 +184,7 @@ dt.section, dd.section {
 		
 		.name, .headertext {
 			width: auto;
-			padding: 0 em(20px);
+			padding: 0 20px;
 			display: block;
 			text-align: center;
 			font-size: auto;
@@ -234,6 +234,6 @@ dt.section, dd.section {
     }
     .findme[data-sitename]::before {
 		content: attr(data-sitename);
-		padding-right: em(10px);
+		padding-right: 10px;
 	}
 }
