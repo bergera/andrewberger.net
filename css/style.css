@@ -156,14 +156,13 @@ dt.section, dd.section {
     padding: 0; }
 
   .email {
+    position: static;
     padding: 0;
     margin: 0; }
     .email span {
       display: none; }
     .email a {
-      position: initial;
-      top: initial;
-      left: initial; }
+      position: static; }
 
   .findme {
     padding: 0;

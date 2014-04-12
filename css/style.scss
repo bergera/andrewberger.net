@@ -210,6 +210,7 @@ dt.section, dd.section {
 	}
 
 	.email {
+		position: static;
 		padding: 0;
 		margin: 0;
 
@@ -218,9 +219,7 @@ dt.section, dd.section {
 		}
 
 		a {
-			position: initial;
-			top: initial;
-			left: initial;
+			position: static;
 		}
     }
     .findme {
