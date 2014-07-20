@@ -1,0 +1,38 @@
+social_links:
+  - css_class: email
+    url: #
+    text: andrew@{this_domain}.net
+    prepend_text: <span>&#64;</span>
+  - css_class: facebook
+    sitename: Facebook
+    url: http://www.facebook.com/andrewwberger
+    text: andrewwberger
+  - css_class: github
+    sitename: GitHub
+    url: https://github.com/bergera
+    text: bergera
+  - css_class: drupal
+    sitename: Drupal.org
+    url: https://drupal.org/user/1878740
+    text: aberger
+
+info_sections:
+  - title: Front-end
+    contents:
+      - HTML5
+      - CSS3, Sass
+      - JavaScript, CoffeeScript
+      - jQuery
+      - AngularJS
+      - Bootstrap 3
+  - title: Back-end
+    contents:
+      - LAMP setup and administration
+      - nginx
+      - PHP, SQL, Ruby
+      - Drupal 7
+      - Ruby on Rails 4
+  - title: Work
+    contents:
+      - <a href="http://cse.wright.edu/">Wright State University</a>
+      - <a href="http://www.slonegear.com/">Slone Gear International</a>

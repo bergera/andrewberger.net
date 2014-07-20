@@ -1,0 +1,21 @@
+.header
+  .container
+    .name
+      %h2 Andrew Berger
+    .headertext
+      %p<
+        I'm a #{link_to "martial artist", "http://www.daytonquestcenter.com"}, web developer, and amateur beer and coffee snob. Born and raised in Dayton, OH, I live in Belmont with my cat Pippa.
+
+.container
+  %dl
+    %dt Find Me
+    - data.index.social_links.each do |link|
+      %dd.findme{class: link.css_class, data: {sitename: link.sitename || nil}}<
+        = link.prepend_text || ""
+        = link_to link.text link.url
+
+    - data.index.info_sections.each do |section|
+      %dt.section= section.title
+      - section.contents.each.with_index do |text, idx|
+        - section_class = idx == 0 ? "section" : nil
+        %dd{class: section_class}= text

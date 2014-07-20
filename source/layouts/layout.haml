@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title || "Andrew Berger"
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", http_equiv: "X-UA-Compatible"}
+    %meta{name: "viewport", content: "width=device-width,initial-scale=1.0"}
+    %meta{name: "description", content: "Andrew Berger, martial artist and web developer from Dayton, OH"}
+    %meta{name: "keywords", content: "web developer, development, web design, freelance, dayton"}
+    = stylesheet_link_tag "normalize", "style"
+
+  %body{class: page_classes}
+    = yield
