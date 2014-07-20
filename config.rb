@@ -1,13 +1,10 @@
 require "haml"
-require "sass"
 
 page "/index.html"
 
 set :haml, {format: :html5}
 
 set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 

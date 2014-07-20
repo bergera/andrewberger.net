@@ -4,8 +4,6 @@ gem "middleman", "~> 3.3.3"
 
 gem "haml", "~> 4.0.5"
 
-gem "sass"
-
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
