@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-# Get middleman from GitHub since they updated listen
 gem "middleman", "~>3.3.3"
 
 gem "haml", "~> 4.0.5"
