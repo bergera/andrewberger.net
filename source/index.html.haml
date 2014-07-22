@@ -12,7 +12,7 @@
     - data.index.social_links.each do |link|
       %dd.findme{class: link.css_class, data: {sitename: link.sitename || nil}}<
         = link.prepend_text || ""
-        = link_to link.text link.url
+        = link_to link.text, link.url
 
     - data.index.info_sections.each do |section|
       %dt.section= section.title
