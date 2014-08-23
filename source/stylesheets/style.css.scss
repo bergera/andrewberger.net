@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+@import url('fontello/css/fontello.css');
+
 $htmlFontSize: 10px;
 $baseFontSize: 16px;
 @function em($px, $base: $baseFontSize) { @return ($px / $base) * 1em; }
@@ -101,10 +103,11 @@ $yellow: #b58900;
 	}
 
 	.findme {
-		padding: 5px 0 0 40px;
-		padding-right: 0;
-		height: 35px;
-		margin-left: $columnWidth + 32px;
+		line-height: 2em;
+
+		i {
+			margin-right: em(4px);
+		}
 	}
 	.email {
 		position: relative;
@@ -224,20 +227,7 @@ $yellow: #b58900;
 		a {
 			position: static;
 		}
-    }
-    .findme {
-    	padding: 0;
-    	margin: 0;
-    	height: auto;
-    }
-    .findme[data-sitename] {
-    	padding: 0;
-		background: none;
-    }
-    .findme[data-sitename]::before {
-		content: attr(data-sitename);
-		padding-right: 10px;
-	}
+  }
 }
 
 @media only print {
@@ -245,5 +235,8 @@ $yellow: #b58900;
 	.findme[data-sitename]::before {
 		content: attr(data-sitename);
 		padding-right: 10px;
+	}
+	.findme i {
+		display: none;
 	}
 }
