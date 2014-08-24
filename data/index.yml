@@ -3,6 +3,10 @@ social_links:
     sitename: GitHub
     url: https://github.com/bergera
     text: bergera
+  - sitename: Twitter
+    css_class: twitter
+    url: https://twitter.com/andrewwberger
+    text: andrewwberger
   - css_class: drupal
     sitename: Drupal.org
     url: https://drupal.org/user/1878740
@@ -19,16 +23,16 @@ social_links:
 info_sections:
   - title: Front-end
     contents:
-      - HTML5
-      - CSS3, Sass
+      - HTML5, Haml
+      - CSS3, Sass/Compass
+      - Bootstrap, Susy
       - JavaScript, CoffeeScript
       - jQuery
       - AngularJS
-      - Bootstrap 3
   - title: Back-end
     contents:
-      - LAMP setup and administration
-      - nginx
-      - PHP, SQL, Ruby
+      - Server administration
+      - Apache, nginx
+      - PHP, MySQL, Ruby
       - Drupal 7
       - Ruby on Rails 4
