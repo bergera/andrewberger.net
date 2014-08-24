@@ -1,0 +1,45 @@
+#header {
+  background-color: $bg-highlight;
+
+  @include breakpoint($breakpoint-mobile) {
+    .container {
+      @include rhythm-padding(1);
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .left, .right {
+      @include rhythm-padding(0.5);
+      text-align: center;
+    }
+  }
+  
+  @include breakpoint($breakpoint-narrow) {
+    @include leader(1.5);
+    .container {
+      @include rhythm-padding(1.5);
+      display: table;
+    }
+  }
+
+  .left h2 {
+    @extend %monospace;
+    @include adjust-font-size-to(64px, 1.6);
+    font-weight: bold;
+    text-transform: lowercase;
+    color: $yellow;
+  }
+
+  .right {
+    @extend %sans-serif-1;
+    @include adjust-font-size-to(20px);
+    font-style: italic;
+    font-weight: bold;
+    color: $text-highlight;
+
+    @include breakpoint($breakpoint-narrow) {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; // can't use table-cell method to vertically center a floated element      
+    }
+  }
+}

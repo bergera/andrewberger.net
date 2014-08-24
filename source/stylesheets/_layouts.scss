@@ -1,0 +1,35 @@
+@include breakpoint($breakpoint-mobile) {
+  .container {
+    @include container(100%);
+  }
+  .left {
+    @include full;
+  }
+  .right {
+    @include full;
+  }
+}
+
+@include breakpoint($breakpoint-narrow) {
+  .container {
+    @include container(800px);
+  }
+  .left {
+    @include span(1);
+  }
+  .right {
+    @include span(last 3);
+  }
+}
+
+@include breakpoint($breakpoint-wide) {
+  .container {
+    @include container(960px);
+  }
+  .left {
+    @include span(1);
+  }
+  .right {
+    @include span(last 3);
+  }
+}

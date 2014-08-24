@@ -1,0 +1,28 @@
+// Susy
+$susy: (
+  columns: 4,
+  gutters: 1/5,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+// Breakpoint
+$breakpoint-mobile:       max-width 660px;
+$breakpoint-narrow:       min-width 661px;
+$breakpoint-narrow-max:   max-width 1024px;
+$breakpoint-wide:         min-width 1024px;
+
+// Colors
+$bg-color:        #002b36;
+$bg-highlight:    #073642;
+$text-color:      #839496;
+$text-highlight:  #93a1a1;
+$blue:            #268bd2;
+$yellow:          #b58900;
