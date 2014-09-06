@@ -6,7 +6,7 @@ social_links:
   - sitename: Twitter
     css_class: twitter
     url: https://twitter.com/andrewwberger
-    text: andrewwberger
+    text: @andrewwberger
   - css_class: drupal
     sitename: Drupal.org
     url: https://drupal.org/user/1878740
