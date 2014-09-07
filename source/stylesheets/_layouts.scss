@@ -26,10 +26,4 @@
   .l-container {
     @include container(960px);
   }
-  .l-left {
-    @include span(1);
-  }
-  .l-right {
-    @include span(last 3);
-  }
 }
