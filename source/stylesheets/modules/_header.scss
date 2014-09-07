@@ -2,12 +2,12 @@
   background-color: $bg-highlight;
 
   @include breakpoint($breakpoint-mobile) {
-    .container {
+    .l-container {
       @include rhythm-padding(1);
       padding-left: 1em;
       padding-right: 1em;
     }
-    .left, .right {
+    .l-left, .l-right {
       @include rhythm-padding(0.5);
       text-align: center;
     }
@@ -15,13 +15,13 @@
   
   @include breakpoint($breakpoint-narrow) {
     @include leader(1.5);
-    .container {
+    .l-container {
       @include rhythm-padding(1.5);
       display: table;
     }
   }
 
-  .left h2 {
+  .l-left h2 {
     @extend %monospace;
     @include adjust-font-size-to(64px, 1.6);
     font-weight: bold;
@@ -29,7 +29,7 @@
     color: $yellow;
   }
 
-  .right {
+  .l-right {
     @extend %sans-serif-1;
     @include adjust-font-size-to(20px);
     font-style: italic;

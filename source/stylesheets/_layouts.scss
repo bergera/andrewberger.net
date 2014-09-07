@@ -1,35 +1,35 @@
 @include breakpoint($breakpoint-mobile) {
-  .container {
+  .l-container {
     @include container(100%);
   }
-  .left {
+  .l-left {
     @include full;
   }
-  .right {
+  .l-right {
     @include full;
   }
 }
 
 @include breakpoint($breakpoint-narrow) {
-  .container {
+  .l-container {
     @include container(800px);
   }
-  .left {
+  .l-left {
     @include span(1);
   }
-  .right {
+  .l-right {
     @include span(last 3);
   }
 }
 
 @include breakpoint($breakpoint-wide) {
-  .container {
+  .l-container {
     @include container(960px);
   }
-  .left {
+  .l-left {
     @include span(1);
   }
-  .right {
+  .l-right {
     @include span(last 3);
   }
 }

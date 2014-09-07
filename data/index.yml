@@ -1,38 +1,38 @@
 social_links:
-  - css_class: github-circled
-    sitename: GitHub
-    url: https://github.com/bergera
-    text: bergera
-  - sitename: Twitter
-    css_class: twitter
-    url: https://twitter.com/andrewwberger
-    text: andrewwberger
-  - css_class: drupal
-    sitename: Drupal.org
-    url: https://drupal.org/user/1878740
-    text: aberger
-  - css_class: linkedin
-    sitename: LinkedIn
-    url: https://www.linkedin.com/pub/andrew-berger/75/318/857
-    text: Andrew Berger
-  - css_class: facebook
-    sitename: Facebook
-    url: http://www.facebook.com/andrewwberger
-    text: andrewwberger
+  - css_class: "github-circled"
+    sitename: "GitHub"
+    url: "https://github.com/bergera"
+    text: "bergera"
+  - sitename: "Twitter"
+    css_class: "twitter"
+    url: "https://twitter.com/andrewwberger"
+    text: "@andrewwberger"
+  - css_class: "drupal"
+    sitename: "Drupal.org"
+    url: "https://drupal.org/user/1878740"
+    text: "aberger"
+  - css_class: "linkedin"
+    sitename: "LinkedIn"
+    url: "https://www.linkedin.com/pub/andrew-berger/75/318/857"
+    text: "Andrew Berger"
+  - css_class: "facebook"
+    sitename: "Facebook"
+    url: "http://www.facebook.com/andrewwberger"
+    text: "andrewwberger"
 
 info_sections:
-  - title: Front-end
+  - title: "Front-end"
     contents:
-      - HTML5, Haml
-      - CSS3, Sass/Compass
-      - Bootstrap, Susy
-      - JavaScript, CoffeeScript
-      - jQuery
-      - AngularJS
-  - title: Back-end
+      - "HTML5, Haml"
+      - "CSS3, Sass/Compass"
+      - "Bootstrap, Susy"
+      - "JavaScript, CoffeeScript"
+      - "jQuery"
+      - "AngularJS"
+  - title: "Back-end"
     contents:
-      - Server administration
-      - Apache, nginx
-      - PHP, MySQL, Ruby
-      - Drupal 7
-      - Ruby on Rails 4
+      - "Server administration"
+      - "Apache, nginx"
+      - "PHP, MySQL, Ruby"
+      - "Drupal 7"
+      - "Ruby on Rails 4"
