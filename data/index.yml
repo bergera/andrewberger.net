@@ -19,20 +19,3 @@ social_links:
     sitename: "Facebook"
     url: "http://www.facebook.com/andrewwberger"
     text: "andrewwberger"
-
-info_sections:
-  - title: "Front-end"
-    contents:
-      - "HTML5, Haml"
-      - "CSS3, Sass/Compass"
-      - "Bootstrap, Susy"
-      - "JavaScript, CoffeeScript"
-      - "jQuery"
-      - "AngularJS"
-  - title: "Back-end"
-    contents:
-      - "Server administration"
-      - "Apache, nginx"
-      - "PHP, MySQL, Ruby"
-      - "Drupal 7"
-      - "Ruby on Rails 4"

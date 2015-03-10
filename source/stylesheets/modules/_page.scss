@@ -1,0 +1,13 @@
+#container {
+  height: 100%;
+
+  @include breakpoint($breakpoint-mobile) {
+    font-size: 80%;
+  }
+
+  @include breakpoint($breakpoint-narrow) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

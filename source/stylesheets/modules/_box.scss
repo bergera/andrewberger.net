@@ -1,0 +1,46 @@
+#box {
+  text-align: center;
+  margin: 0 auto;
+
+  @include breakpoint($breakpoint-mobile) {
+    width: 100%;
+
+    .top, .bottom {
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .top {
+      max-width: 6em;
+    }
+
+    .bottom {
+      text-align: center;
+    }
+  }
+
+  @include breakpoint($breakpoint-narrow) {
+    width: 18em;
+    border: 0.5em dashed $color-bg-highlight;
+
+    .bottom {
+      text-align: left;
+    }
+  }
+  
+  .top {
+    padding: 0.5em;
+    color: $color-yellow;
+    line-height: 0.6em;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  
+  .bottom {
+    line-height: 1.8em;
+    padding: 0 3em 2em 3em;
+  }
+}
