@@ -21,11 +21,15 @@
   }
 
   @include breakpoint($breakpoint-narrow) {
-    width: 18em;
+    width: 20em;
+    height: 20em;
     border: 0.5em dashed $color-bg-highlight;
 
     .bottom {
+      width: 66%;
+      margin: 0 auto;
       text-align: left;
+      padding-left: 1em;
     }
   }
   
@@ -41,6 +45,6 @@
   
   .bottom {
     line-height: 1.8em;
-    padding: 0 3em 2em 3em;
+    padding-bottom: 2em;
   }
 }
