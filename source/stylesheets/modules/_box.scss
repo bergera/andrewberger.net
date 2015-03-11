@@ -2,37 +2,6 @@
   text-align: center;
   margin: 0 auto;
 
-  @include breakpoint($breakpoint-mobile) {
-    width: 100%;
-
-    .top, .bottom {
-      margin: 0 auto;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .top {
-      max-width: 6em;
-    }
-
-    .bottom {
-      text-align: center;
-    }
-  }
-
-  @include breakpoint($breakpoint-narrow) {
-    width: 20em;
-    height: 20em;
-    border: 0.5em dashed $color-bg-highlight;
-
-    .bottom {
-      width: 66%;
-      margin: 0 auto;
-      text-align: left;
-      padding-left: 1em;
-    }
-  }
-  
   .top {
     padding: 0.5em;
     color: $color-yellow;
@@ -46,5 +15,43 @@
   .bottom {
     line-height: 1.8em;
     padding-bottom: 2em;
+  }
+
+  @include breakpoint($breakpoint-mobile) {
+    width: 100%;
+
+    .top, .bottom {
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .top {
+      width: 4em;
+      padding-left: 0 !important;
+
+    }
+
+    .bottom {
+      text-align: left;
+      width: 12em;
+    }
+  }
+
+  @include breakpoint($breakpoint-narrow) {
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10em 0 0 -10em;
+    border: 0.5em dashed $color-bg-highlight;
+
+    .bottom {
+      width: 66%;
+      margin: 0 auto;
+      text-align: left;
+      padding-left: 1em;
+    }
   }
 }

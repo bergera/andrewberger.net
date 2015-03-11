@@ -1,5 +1,6 @@
 #container {
   height: 100%;
+  padding: 0;
 
   @include breakpoint($breakpoint-mobile) {
     font-size: 80%;
@@ -7,12 +8,5 @@
 
   @include breakpoint($breakpoint-narrow) {
     position: relative;
-
-    & > div {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -10em 0 0 -10em;
-    }
   }
 }

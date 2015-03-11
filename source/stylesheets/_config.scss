@@ -1,8 +1,6 @@
 // Breakpoint
-$breakpoint-mobile:       max-width 660px;
-$breakpoint-narrow:       min-width 661px;
-$breakpoint-narrow-max:   max-width 1024px;
-$breakpoint-wide:         min-width 1024px;
+$breakpoint-mobile:       max-width 24em;
+$breakpoint-narrow:       min-width 24em;
 
 // Colors
 $color-bg:              #002b36;
