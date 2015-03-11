@@ -5,8 +5,8 @@ gem "middleman", "~>3.3.5"
 gem "haml", "~> 4.0.5"
 
 gem "sass", "~> 3.4.1"
+gem "sass-globbing", "~> 1.1.1"
 gem "compass", "~> 1.0.1"
-gem "susy", "~> 2.1.3"
 gem "breakpoint", "~> 2.5.0"
 
 # Live-reloading plugin

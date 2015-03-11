@@ -3,7 +3,7 @@
 @import "breakpoint";
 
 // Meat
-@import "config";
+@import "variables/**/*";
 @import "fonts/fonts";
-@import "base";
-@import "modules/modules";
+@import "base/**/*";
+@import "modules/**/*";

@@ -1,5 +1,5 @@
+require "sass-globbing"
 require "haml"
-require "susy"
 require "breakpoint"
 
 page "/index.html"
