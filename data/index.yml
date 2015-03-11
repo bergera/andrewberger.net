@@ -1,4 +1,11 @@
 social_links:
+  # - css_class: "location"
+  #   sitename: "Location"
+  #   text: "Dayton, OH"
+  # - css_class: "mail"
+  #   sitename: "Email"
+  #   url: "mailto:andrew@andrewberger.net"
+  #   text: "andrew@andrewberger.net"
   - css_class: "github-circled"
     sitename: "GitHub"
     url: "https://github.com/bergera"
