@@ -17,6 +17,11 @@
     padding-bottom: 2em;
   }
 
+  // fade in
+  @include animation-duration(1s);
+  @include animation-fill-mode(forwards);
+  @include animation-name(fadeIn);
+
   @include breakpoint($breakpoint-mobile) {
     width: 100%;
 
@@ -54,4 +59,9 @@
       padding-left: 1em;
     }
   }
+}
+
+@include keyframes(fadeIn) {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
 }
