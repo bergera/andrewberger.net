@@ -6,4 +6,7 @@
         - data.index.social_links.each do |link|
           %li{data: {sitename: link.sitename || nil}}<
             %i.icon{class: 'icon-' + link.css_class}
-            = link_to link.text, link.url
+            - if link.url.nil? || link.url.empty?
+              = link.text
+            - else
+              = link_to link.text, link.url
