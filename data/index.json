@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Location",
+        "icon": "location",
+        "text": "Dayton, OH"
+    },
+    {
+        "name": "School",
+        "icon": "education",
+        "text": "Wright State University",
+        "url": "https://engineering-computer-science.wright.edu/computer-science-and-engineering"
+    },
+    {
+        "name": "GitHub",
+        "icon": "gthb",
+        "url": "https://github.com/bergera",
+        "text": "bergera"
+    },
+    {
+        "name": "LinkedIn",
+        "icon": "lnkdin",
+        "url": "https://www.linkedin.com/pub/andrew-berger/75/318/857",
+        "text": "Andrew Berger"
+    }
+]

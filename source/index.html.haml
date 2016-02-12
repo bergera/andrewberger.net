@@ -3,9 +3,9 @@
     .top Andrew Berger
     .bottom
       %ul
-        - data.index.social_links.each do |link|
-          %li{data: {sitename: link.sitename || nil}}<
-            %i.icon{class: 'icon-' + link.css_class}
+        - data.index.each do |link|
+          %li{data: {sitename: link.name || nil}}<
+            %object.icon{data: "/images/#{link.icon}.svg", class: "icon-#{link.icon}", type: "image/svg+xml"}= link.name
             - if link.url.nil? || link.url.empty?
               = link.text
             - else

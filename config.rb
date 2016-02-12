@@ -1,4 +1,3 @@
-# require "middleman/deploy"
 require "sass-globbing"
 require "haml"
 require "breakpoint"
