@@ -1,3 +1,4 @@
+# require "middleman/deploy"
 require "sass-globbing"
 require "haml"
 require "breakpoint"
@@ -19,4 +20,11 @@ end
 configure :build do
   activate :minify_css
   activate :relative_assets
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+  deploy.remote = "deploy"
+  deploy.branch = "master"
 end
