@@ -33,21 +33,4 @@ script
 end script
 ```
 
-`deploy.sh` performs the following steps:
-
-```
-# stop service
-$ sudo initctl stop website-nginx
-
-# remove existing container
-$ docker rm website-nginx
-
-# build new image if necessary
-$ docker build -t website-nginx .
-
-# run new container
-$ docker run -d --name website-nginx -p 8080:80 -v $(pwd)/build:/usr/share/nginx/html:ro website-nginx
-
-# restart service
-$ sudo initctl start website-nginx
-```
+Run `./deploy.sh` to rebuild the project and Docker container.
