@@ -5,7 +5,8 @@
       %ul
         - data.index.each do |link|
           %li{data: {sitename: link.name || nil}}<
-            %object.icon{data: "/images/#{link.icon}.svg", class: "icon-#{link.icon}", type: "image/svg+xml"}= link.name
+            %object.icon{data: "/images/#{link.icon}.svg", class: "icon-#{link.icon}", type: "image/svg+xml"}
+              %img.icon{src: "/images/#{link.icon}.png", alt: link.name}
             - if link.url.nil? || link.url.empty?
               = link.text
             - else

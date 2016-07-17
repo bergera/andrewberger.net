@@ -1,14 +1,19 @@
 [
     {
         "name": "Location",
-        "icon": "location",
+        "icon": "earth",
         "text": "Dayton, OH"
     },
     {
-        "name": "School",
-        "icon": "education",
-        "text": "Wright State University",
-        "url": "https://engineering-computer-science.wright.edu/computer-science-and-engineering"
+        "name": "Job Title",
+        "icon": "profile",
+        "text": "Software Engineer"
+    },
+    {
+        "name": "Works For",
+        "icon": "briefcase",
+        "text": "Teradata",
+        "url": "http://www.teradata.com"
     },
     {
         "name": "GitHub",
@@ -18,7 +23,7 @@
     },
     {
         "name": "LinkedIn",
-        "icon": "lnkdin",
+        "icon": "lnkdn",
         "url": "https://www.linkedin.com/pub/andrew-berger/75/318/857",
         "text": "Andrew Berger"
     }

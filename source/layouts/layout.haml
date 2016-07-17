@@ -7,8 +7,11 @@
     %meta{name: "viewport", content: "width=device-width,initial-scale=1.0"}
     %meta{name: "description", content: "Andrew Berger - Web developer from Dayton, OH"}
     %meta{name: "keywords", content: "web developer, development, web design, freelance, dayton"}
-    = stylesheet_inline_tag "main"
+    = favicon_tag "/images/terminal.png"
+    = stylesheet_link_tag "main"
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"
 
   %body{class: page_classes}
     = yield
+    %script{type:"text/javascript"}= "flexibility(document.documentElement);"

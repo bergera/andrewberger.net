@@ -7,11 +7,9 @@ gem "wdm", "~> 0.1.0", platforms: [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Middleman duh
-gem "middleman", ">=4.0.0"
+gem "middleman"
 gem "middleman-livereload"
-gem "middleman-compass", ">=4.0.0"
-gem "middleman-deploy", "=2.0.0.pre.alpha"
-gem "middleman-inliner", github: "hwhelchel/middleman-inliner"
+gem "middleman-compass"
 gem "middleman-minify-html"
 
 # Stylesheet stuff
@@ -20,4 +18,4 @@ gem "sass-globbing"
 gem "breakpoint"
 
 # Template stuff
-gem "haml", "~> 4.0.7"
+gem "haml"

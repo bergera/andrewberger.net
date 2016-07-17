@@ -1,0 +1,139 @@
+//
+// Bones
+//
+
+@import "compass";
+@import "breakpoint";
+
+//
+// Fonts
+//
+
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+//
+// Config
+//
+
+$breakpoint-mobile:       max-width 26em;
+$breakpoint-narrow:       min-width 26em;
+$color-bg:              #002b36;
+$color-bg-highlight:    #073642;
+$color-text:            #839496;
+$color-text-highlight:  #93a1a1;
+$color-blue:            #268bd2;
+$color-yellow:          #b58900;
+
+//
+// Globals
+//
+
+@include global-reset;
+@include establish-baseline;
+
+* { 
+  @include box-sizing(border-box);
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $color-bg;
+  font-family: "Open Sans", Helvetica, Tahoma, sans-serif;
+  color: $color-text;
+}
+
+a {
+  @include hover-link;
+  @include link-colors($color-blue);
+}
+
+//
+// Animations
+//
+
+@include keyframes(fadeIn) {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+//
+// Styles
+//
+
+.icon {
+    width: 1.125em;
+    height: 1.125em;
+    margin-bottom: -0.15em;
+    margin-right: 0.3em;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .top {
+    color: $color-yellow;
+    line-height: 0.6em;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-align: center;
+  }
+  
+  .bottom ul {
+    @include no-bullets;
+    line-height: 1.8em;
+    padding: 0;
+    margin: 0;
+  }
+
+  // fade in
+  @include animation-duration(1s);
+  @include animation-fill-mode(forwards);
+  @include animation-name(fadeIn);
+
+  @include breakpoint($breakpoint-mobile) {
+    width: 100%;
+
+    .bottom {
+      margin-top: 2em;
+      text-align: left;
+      width: 15em;
+    }
+  }
+
+  @include breakpoint($breakpoint-narrow) {
+    width: 20em;
+    height: 22em;
+    border: 0.5em dashed $color-bg-highlight;
+
+    .bottom {
+      text-align: left;
+
+      li {
+        margin-bottom: 0.3em;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
